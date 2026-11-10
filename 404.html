@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var path = location.pathname;
+  if (path === '/petpill' || path.indexOf('/petpill/') === 0) {
+    location.replace('https://petpillapp.com/' + path.replace(/^\/petpill\/?/, '') + location.search + location.hash);
+  }
+})();
+</script>
+</head>
+<body>
+<p>Page not found. PetPill's website is at <a href="https://petpillapp.com/">petpillapp.com</a>.</p>
+</body>
+</html>
